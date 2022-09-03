@@ -67,7 +67,7 @@ in
     Service = {
       Type = "simple";
       Restart = "always";
-      ExecStart = "/etc/profiles/per-user/yourusername/bin/clash";
+      ExecStart = "${pkgs.clash}/bin/clash";
     };
     Install = {
       WantedBy = [ "default.target" ];
